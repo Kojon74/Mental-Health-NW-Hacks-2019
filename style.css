@@ -206,7 +206,7 @@ button{
 	float:left;
 	width:50%;			    		 /* width of whole page */
 	overflow:hidden;		  	 /* This chops off any overhanging divs */
-	background:#FAE679;
+	background:#FFF;
 
 		   /* col2 background colour */	
 }
@@ -215,6 +215,15 @@ button{
 	position:relative;  		 /* This fixes the IE7 overflow hidden bug */
 	clear:both;
 	float:right;
+	width:50%;			    		 /* width of whole page */
+	overflow:hidden;		  	 /* This chops off any overhanging divs */
+	background:#0FC18D;
+
+}
+
+.leftcol {
+	position:relative;  		 /* This fixes the IE7 overflow hidden bug */
+	float:left;
 	width:50%;			    		 /* width of whole page */
 	overflow:hidden;		  	 /* This chops off any overhanging divs */
 	background:#0FC18D;
