@@ -2,12 +2,16 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <link rel="shortcut icon" type="image/png" href="customlogo.png"/> <!--CHANGE ICON-->
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
     <link rel="stylesheet" id="ppstyle" type="text/css" href="style.css">
     <link rel='stylesheet' href='./css/font-awesome.min.css'/>
-    <title>Santa's Factory | Home</title>
+
+    <!-- This is a comment. It doesn't affect the code but it allows for you to leave notes for yourself. -->
+
+    <!-- This is the name of the page displayed on the tap of the browser. -->
+    <title>Santas Factory | About</title>
     <script type="text/javascript">
 // <![CDATA[
 var colour="#a3d5ff";
@@ -179,13 +183,14 @@ function createDiv(height, width) {
 }
 // ]]>
 </script>
+
 </head>
 <body>
 
 <!-- Main container, prevents horizontal scrolling -->
 <div class="page-container">
 
-<div style="background-color: #CC0000;">
+<div style="background-color: #cc0000;">
       <div class="container">
           <nav class="navbar row">
               <div class="navbar-brand">Santa's Factory</div>
@@ -204,95 +209,33 @@ function createDiv(height, width) {
                   <li>
                       <a href="employees.html">Employees</a>
                   </li>
-                </ul>
+              </ul>
           </nav>
       </div>
   </div>
+
 <!-- Hero Section. Basically a big picture as a header on which things can be displayed -->
 <div id="hero">
   <div class="container">
-    <!-- The class text-center centers the text -->
-		<h1 class="text-center">SPREADING JOY</h1>
-
-    <!-- Divider is basically a thin line that nearly fills the width of its container -->
-		<div class="divider-h">
-			<span class="divider" style="border-color:#fff;"></span>
-		</div>
-
-    <!-- The class text-center centers the text -->
-		<h2 class="text-center">
-			Welcome to Santa's factory!
-    </h2>
-    <h3 class="text-center">
-      Here you will find information on the many presents we provide, and our wonderful employees.
-		</h3>
-
-    <!-- Having the class text-center on the div passes it on to anything inside the div, as a result
-    the text inside the button is centered -->
-		<div class="text-center">
-      <!-- It is possible to link to parts inside a page. Simply set the id on a div and then link to it
-      with a # and then the id of the div, for example #next -->
-			<a href="presents.html" class="btn">See our products</a>
-		</div>
+    <!-- Since this has the id "hero" it will have the same style code as the hero in the index.html file -->
+    <h1>Our Purpose</h1>
   </div>
 </div>
 <!-- end Hero -->
 
-<!-- Columns -->
+<!-- Main content of the page -->
 <div class="container">
-
-  <!-- The "row" class allows for you to force things to be in a new row. If you want a new row simply
-  create another div below this one and give it the class row. Anything you want in the new row should be
-  in that div. -->
-	<div class="row">
-    <!-- Columns are made in the format below. The number can be anything from 1 to 12. The width of the
-    column is equal to the number you chose divided by 12. So if you choose 6 that's half the width,
-    3 is a quarter, 4 is a third, etc. The width is a percentage of the container so it is possible
-    to have columns inside columns. -->
-		<div>
-      <!-- Column is being set to 6/12 (half) the width of its container, in this case a column that fills
-      half the screen. -->
-			<div style="border:4px solid #cc0000;background-color:AntiqueWhite;">
-        <h4 class="text-center"> <a href="about.html">What we do</a></h4>
-        <p class="text-center">
-  				Read about our purpose, goals, and inspiration.
-  			</p>
-      </div>
-      <div class="col-sm-6" style="border:4px solid #cc0000;background-color:AntiqueWhite;">
-        <h4 class="text-center"> <a href="presents.html">Our Products</a></h4>
-        <p class="text-center">
-  				Browse our endless products list.
-  			</p>
-      </div>
-		</div>
-    <!-- These columns fit the width of the screen because their numbers all add up to 12. -->
-		<div class="col-sm-6" style="border:4px solid #cc0000;background-color:AntiqueWhite;">
-			<h4 class="text-center"> <a href="employees.html">Who we Are</a></h4>
-			<p class="text-center">
-				Learn about who makes our products here.
-      </p>
-		</div>
-	</div>
+  <!-- The <br> tag adds a break line symbol, basically starting a new paragraph -->
+  <h3 style="color:#000;">At Santa's Factory, we make toys to spread with all the children across the world.
+    <br>Our elves aim to design fun, unique, toys every year to keep up with the demand.
+  </h3>
+  <p>Santa Claus started this company with Mrs. Claus in 0 B.C, attempting to give joy to all the boys and girls of the world. Today, Santa's Factory is an internation organization that delivers over 2 000 000 000 presents every year.
+Since then, they have revolutionalized December for all ages, and have gone on to effect all gift-giving holidays. With beginnings as only a Christian icon, he has since grown to be a staple in many homes around the globe and a symbol of happiness during the holidays.
+  <!-- This is the right use of effect as a verb. -->
+Now every year, on December 25th, Santa, along with his team of trustworthy elves, personally delivers toys around the world with one goal: to spread joy to all the children around the globe and create peace around the world for one whole-y night.
+<br> </br>
 </div>
-<!-- end Columns -->
-
-<!-- Next. id is to allow buttons to link to it. -->
-<div class="container" id="next">
-		<div class="text-center">
-      <!-- i stands for "icon" aria-hidden is to allow people to disable icons
-      The bigger the font size the bigger the icon.
-      Icons are from Font Awesome and set as a class, a list of all the icons can be found at http://fontawesome.io/icons/
-      Keep in mind that some of the icons added more recently to Font Awesome are not included in this template. -->
-
-      <img src="customlogo.png" style="max-width: 50%; margin: auto;margin-top:50px;margin-bottom:0px" class="img-responsive"></img>
-      <img src="http://images.clipartpanda.com/snowflake-clipart-transparent-background-green-snowflake-md.png" style="max-width: 15%; margin:auto; margin-top:0px;margin-bottom:10px;" class="img-responsive"></img>
-
-		</div>
-	</div>
-<!-- end Next -->
-
-</div>
-<!-- Main container END -->
+<!-- end Main content of the page -->
 
 </body>
 
