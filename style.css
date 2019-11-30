@@ -198,3 +198,16 @@ button{
 	background-color: rgba(0,0,0,.5);
 	width: 26px;
 }
+
+/* Column containers ---------------------------------------------------------*/
+.container2 {
+	position:relative;  		 /* This fixes the IE7 overflow hidden bug */
+	clear:both;
+	float:left;
+	width:50%;			    		 /* width of whole page */
+	overflow:hidden;		  	 /* This chops off any overhanging divs */
+	background:#FAE679;
+
+		   /* col2 background colour */	
+}
+
