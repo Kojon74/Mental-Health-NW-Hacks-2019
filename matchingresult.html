@@ -182,50 +182,63 @@ function createDiv(height, width) {
 <!-- Main container, prevents horizontal scrolling -->
 <div class="page-container">
 
-<div style="background-color: rgb(216,216,216,0.5);">
-      <div class="container">
-          <nav class="navbar row">
-              <div class="navbar-brand">Mental Health Matching</div>
-              <!-- ul is a list/table, in this case it is styled to be horizontal to display all the links -->
-              <ul>
-                  <!-- li is an entry in the list/table, in this case each entry is a link -->
-              
-                  <li>
-                      <a href="signup.html">Sign Up</a>
-                  </li>
-                  <li>
-                      <a href="matchingresult.html">Matching</a>
-                  </li>
-                </ul>
-          </nav>
+
+    <div style="background-color: rgb(216,216,216,0.5);">
+          <div class="container">
+              <nav class="navbar row">
+                  <div class="navbar-brand">Counsel Connect</div>
+                  <!-- ul is a list/table, in this case it is styled to be horizontal to display all the links -->
+                  <ul class="site-navigation nav navbar-nav">
+                      <!-- li is an entry in the list/table, in this case each entry is a link -->
+                      <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                      <li>
+                          <a href="about.html">About</a>
+                      </li>
+                  
+                      <li>
+                          <a href="resources.html">Resources</a>
+                      </li>
+                    </ul>
+              </nav>
+          </div>
       </div>
-  </div>
+    
   <div id="hero">
-    <div class="col1">
+    <div class="container">
       <!-- Since this has the id "hero" it will have the same style code as the hero in the index.html file -->
       <h1>Your Matching Results: </h1>
 
     </div>
   </div>
 
+<div class = "container1">
   <div class="container2">
-<table style="width:100%">
+<table style = "width: 100%;">
+  <br>
   <tr>
-    <th><h4 style="text-align:left;"><b>Your Info: </b></h4></th>
-
-    <th><h4 style="text-align:right;"><b>Your Matched Results: </b></h4></th>
-
+    <th><h4 style="text-align:center;"><b>Your Info: </b></h4></th>
+    <th><h4 style="text-align:center;"><b>Your Matched Results: </b></h4></th>
   </tr>
-
+</table>
+  <table style="width:100%">
   <tr>
-    <th>First name:</th><th> YOUR FIRST NAME </th>
+    <th><p style = "text-align: left;">First name:</p></th><th> <p style = "text-align: left;">YOUR FIRST NAME</p> </th>
+    
+    <th><p style = "text-align: left;">First name:</p></th><th> <p style = "text-align: left;">JOHN</p> </th> 
     
   </tr>
   <tr>
-    <th>Last name:</th> <th> YOUR LAST NAME </th><br>
+      <th><p style = "text-align: left;">Last name:</p></th><th> <p style = "text-align: left;">YOUR LAST NAME</p> </th> 
+      
+      <th><p style = "text-align: left;">Last name:</p></th><th> <p style = "text-align: left;">DOE</p> </th> <br>
+     
   </tr>
   <tr>
-    <th>Gender: </th> <th> GENDER </th><br>
+      <th><p style = "text-align: left;">Gender:</p></th><th> <p style = "text-align: left;">MALE</p> </th> 
+      
+      <th><p style = "text-align: left;">Gender:</p></th><th> <p style = "text-align: left;">MALE</p> </th> 
   </tr>
 
   <tr>
@@ -236,22 +249,20 @@ function createDiv(height, width) {
         <th>Faculty: </th> <th> FACULTY </th><br>
       </tr>
 
-  <tr>
-    <!--<td style="text-align:center;"><img src="santa.jpg" width=150px></td>-->
-    <!--<td style="text-align:center;"><img src="mrs_claus.jpg" width=150px></td>-->
-    <!--<td style="text-align:center;"><img src="elf.jpg" width=150px</td>-->
-  </tr>
 </table>
+</div>
 </div>
 
 <div class = "rightcol">
-    <th><h4 style="text-align:center;"><b>More Resources </b></h4></th>
-
+  <br>
+    <th><h4 style="text-align:center;"><a href="resources.html"><b>More Resources! </b></a></h4></th>
+    <br>
 </div>
 
 <div class = "leftcol">
-    <th><h4 style="text-align:center;"><b>Back to Home Page</b></h4></th>
-
+  <br>
+    <th><h4 style="text-align:center;"><a href="index.html"><b>Back to Home Page </b></a></h4></th>
+<br>
 </div>
 
 <footer>

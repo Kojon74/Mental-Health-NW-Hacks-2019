@@ -147,11 +147,13 @@ button{
   background-image:url(Wallpaper-2.png);
 }
 
+
 #hero .container {
   /* Space at the top and bottom of the hero area */
   padding-top:120px;
   padding-bottom:120px;
 }
+ 
 
 /* Navigation */
 .navbar{
@@ -204,11 +206,32 @@ button{
 	position:relative;  		 /* This fixes the IE7 overflow hidden bug */
 	clear:both;
 	float:left;
-	width:50%;			    		 /* width of whole page */
+	width:100%;			    		 /* width of whole page */
 	overflow:hidden;		  	 /* This chops off any overhanging divs */
-	background:#FFF;
+	background:#FFF;	/* col2 background colour */	
+	padding:0 0 1em 0;
+	left:5%;
+	width: 90%;
+		   
+}
+.container1 {
+	position:relative;  		 /* This fixes the IE7 overflow hidden bug */
+	clear:both;
+	float:left;
+	width:100%;			    		 /* width of whole page */
+	overflow:hidden;		  	 /* This chops off any overhanging divs */
+	background:#FFF;	/* col2 background colour */	
+	padding:0 0 1em 0;
+		   
+}
 
-		   /* col2 background colour */	
+.col1 {									   /* left column */
+	float:left;
+	width:21%;			      	 /* width of 25% minus 2% padding on each side */
+	padding:0 0 1em 0;	  	 /* no left or right padding on columns; just top and bottom */
+	overflow:hidden;
+	position:relative;
+	left:77%;			      		 /* shift right 75%, plus 2% left-padding for col1 */
 }
 
 .rightcol {
