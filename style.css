@@ -211,3 +211,12 @@ button{
 		   /* col2 background colour */	
 }
 
+.rightcol {
+	position:relative;  		 /* This fixes the IE7 overflow hidden bug */
+	clear:both;
+	float:right;
+	width:50%;			    		 /* width of whole page */
+	overflow:hidden;		  	 /* This chops off any overhanging divs */
+	background:#0FC18D;
+
+}
