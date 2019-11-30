@@ -2,12 +2,15 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <link rel="shortcut icon" type="image/png" href="Wallpaper-2.png"/> <!--CHANGE ICON-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
     <link rel="stylesheet" id="ppstyle" type="text/css" href="style.css">
     <link rel='stylesheet' href='./css/font-awesome.min.css'/>
-    <title>Mental Health | Home</title>
+
+    <!-- This is a comment. It doesn't affect the code but it allows for you to leave notes for yourself. -->
+
+    <!-- This is the name of the page displayed on the tap of the browser. -->
+    <title> Mental Health | Sign up </title>
     <script type="text/javascript">
 // <![CDATA[
 var colour="#a3d5ff";
@@ -58,26 +61,26 @@ window.onload=function() { if (document.getElementById) {
   sparkle();
 }}
 
-// function sparkle() {
-//   var c;
-//   if (x!=ox || y!=oy) {
-//     ox=x;
-//     oy=y;
-//     for (c=0; c<sparkles; c++) if (!starv[c]) {
-//       star[c].style.left=(starx[c]=x)+"px";
-//       star[c].style.top=(stary[c]=y)+"px";
-//       star[c].style.clip="rect(0px, 5px, 5px, 0px)";
-//       star[c].style.visibility="visible";
-//       starv[c]=50;
-//       break;
-//     }
-//   }
-//   for (c=0; c<sparkles; c++) {
-//     if (starv[c]) update_star(c);
-//     if (tinyv[c]) update_tiny(c);
-//   }
-//   setTimeout("sparkle()", 40);
-// }
+function sparkle() {
+  var c;
+  if (x!=ox || y!=oy) {
+    ox=x;
+    oy=y;
+    for (c=0; c<sparkles; c++) if (!starv[c]) {
+      star[c].style.left=(starx[c]=x)+"px";
+      star[c].style.top=(stary[c]=y)+"px";
+      star[c].style.clip="rect(0px, 5px, 5px, 0px)";
+      star[c].style.visibility="visible";
+      starv[c]=50;
+      break;
+    }
+  }
+  for (c=0; c<sparkles; c++) {
+    if (starv[c]) update_star(c);
+    if (tinyv[c]) update_tiny(c);
+  }
+  setTimeout("sparkle()", 40);
+}
 
 function update_star(i) {
   if (--starv[i]==25) star[i].style.clip="rect(1px, 4px, 4px, 1px)";
@@ -175,7 +178,6 @@ function createDiv(height, width) {
   div.style.width=width+"px";
   div.style.overflow="hidden";
   div.style.backgroundColor=colour;
-  div.style.backgroundImage="Wallpaper-2.png";
   return (div);
 }
 // ]]>
@@ -186,18 +188,20 @@ function createDiv(height, width) {
 <!-- Main container, prevents horizontal scrolling -->
 <div class="page-container">
 
-<div style="background-color: rgba(216, 216, 216, 0.5);">
+<div style="background-color: #CC0000;">
       <div class="container">
           <nav class="navbar row">
-              <div class="navbar-brand">Counsel Connect</div>
+              <div class="navbar-brand">Santa's Factory</div>
               <!-- ul is a list/table, in this case it is styled to be horizontal to display all the links -->
               <ul class="site-navigation nav navbar-nav">
                   <!-- li is an entry in the list/table, in this case each entry is a link -->
-        
+                  <li>
+                    <a href="index.html">Home</a>
+                </li>
                   <li>
                       <a href="about.html">About</a>
                   </li>
-                
+              
                   <li>
                       <a href="resources.html">Resources</a>
                   </li>
@@ -205,53 +209,38 @@ function createDiv(height, width) {
           </nav>
       </div>
   </div>
+
 <!-- Hero Section. Basically a big picture as a header on which things can be displayed -->
 <div id="hero">
   <div class="container">
-    <!-- The class text-center centers the text -->
-		<h1 class="text-center">Counsel Connect</h1>
-
-    <!-- Divider is basically a thin line that nearly fills the width of its container -->
-		<div class="divider-h">
-			<span class="divider" style="border-color:#fff;"></span>
-		</div>
-
-    <!-- The class text-center centers the text -->
-		<h2 class="text-center">
-			Moving Mental Health Fowards
-    </h2>
-    <h3 class="text-center">
-      Here you will find information on ways to access the resources you need.
-		</h3>
-
-    <!-- Having the class text-center on the div passes it on to anything inside the div, as a result
-    the text inside the button is centered -->
-		<div class="text-center">
-      <!-- It is possible to link to parts inside a page. Simply set the id on a div and then link to it
-      with a # and then the id of the div, for example #next -->
-			<a href="signup.html" class="btn">Next</a>
-		</div>
+    <!-- Since this has the id "hero" it will have the same style code as the hero in the index.html file -->
+    <h1>Sign up</h1>
   </div>
 </div>
 <!-- end Hero -->
 
-
-
-<!-- Next. id is to allow buttons to link to it. -->
-<div class="container" id="next">
-		<div class="text-center">
-      <!-- i stands for "icon" aria-hidden is to allow people to disable icons
-      The bigger the font size the bigger the icon.
-      Icons are from Font Awesome and set as a class, a list of all the icons can be found at http://fontawesome.io/icons/
-      Keep in mind that some of the icons added more recently to Font Awesome are not included in this template. -->
-
-     
-		</div>
-	</div>
-<!-- end Next -->
-
+<!-- Main content of the page -->
+<div class="container">
+  <!-- The <br> tag adds a break line symbol, basically starting a new paragraph -->
+  <h3 style="color:#000; font-family:sans-serif;">Here at Santa's Factory®, we offer a wide variety of presents catering to your children all ages. Delivery is guaranteed on December 25<sup>th</sup> of each year, straight to your door.</h3>
+  <h6 style="font-size:20px;">Shipping and handling is free with purchase.</h6>
+  <h4>Sign up here to be matched with someone </h4>
+    <p>Sign up here, Christmas is a magical time, filled with joy and festive spirit. Santa's Factory® offers a wide selection of dolls, model vehicles, sports equipment, stuffed animals, and more! View some of our hand-crafted children's toys below.</p>
+    <form>
+      First name:<br>
+      <input type="text" name="firstname"><br>
+      Last name:<br>
+      <input type="text" name="lastname"><br>
+      <input type="radio" name="gender" value="male" checked> Male<br>
+      <input type="radio" name="gender" value="female"> Female<br>
+      <input type="radio" name="gender" value="other"> Other <br>
+      <br>
+      <a href="matchingresult.html">Submit</a>
+          
+    </form>
+    
 </div>
-<!-- Main container END -->
+<!-- end Main content of the page -->
 
 </body>
 
