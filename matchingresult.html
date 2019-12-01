@@ -53,7 +53,49 @@ window.onload=function() { if (document.getElementById) {
   }
   set_width();
   sparkle();
+
+
+  function GetURLParameter(sParam)
+{
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++) 
+    {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam) 
+        {
+            return sParameterName[1];
+        }
+    }
+}​
+
+  var bn = GetURLParameter("firstname");
+  document.getElementById('output1').innerHTML = "123";
+  var fn = hello;
+  document.getElementById('output').innerHTML = fn;
+
 }}
+
+// function sparkle() {
+//   var c;
+//   if (x!=ox || y!=oy) {
+//     ox=x;
+//     oy=y;
+//     for (c=0; c<sparkles; c++) if (!starv[c]) {
+//       star[c].style.left=(starx[c]=x)+"px";
+//       star[c].style.top=(stary[c]=y)+"px";
+//       star[c].style.clip="rect(0px, 5px, 5px, 0px)";
+//       star[c].style.visibility="visible";
+//       starv[c]=50;
+//       break;
+//     }
+//   }
+//   for (c=0; c<sparkles; c++) {
+//     if (starv[c]) update_star(c);
+//     if (tinyv[c]) update_tiny(c);
+//   }
+//   setTimeout("sparkle()", 40);
+// }
 
 function update_star(i) {
   if (--starv[i]==25) star[i].style.clip="rect(1px, 4px, 4px, 1px)";
@@ -155,24 +197,6 @@ function createDiv(height, width) {
 }
 // ]]>
   
-function GetURLParameter(sParam)
-{
-    var sPageURL = window.location.search.substring(1);
-    var sURLVariables = sPageURL.split('&');
-    for (var i = 0; i < sURLVariables.length; i++) 
-    {
-        var sParameterName = sURLVariables[i].split('=');
-        if (sParameterName[0] == sParam) 
-        {
-            return sParameterName[1];
-        }
-    }
-}​
-
-  var bn = GetURLParameter("firstname");
-  document.getElementById('output1').innerHTML = "123";
-  var fn = 'name';
-  document.getElementById('output').innerHTML = fn;
 
   </script>
 
@@ -240,7 +264,7 @@ function GetURLParameter(sParam)
   <tr>
       <th><p style = "text-align: left;">Gender:</p></th><th> <p style = "text-align: left;">MALE</p> </th> 
       
-      <th><p style = "text-align: left;">Gender:</p></th><th> <p style = "text-align: left;">MALE</p> </th> 
+      <th><p style = "text-align: left;">Gender:</p></th><th> <p style = "text-align: left;">FEMALE</p> </th> 
   </tr>
 
 
@@ -267,7 +291,7 @@ function GetURLParameter(sParam)
 </div>
 
 <footer>
-  <div class="footer" style="background-color: rgba(216, 216, 216, 0.5);">
+  <div class="footer">
   	<div class="container">
   		<div class="col-sm-12 text-center" style="margin-top:8px;">
 				<a href="https://twitter.com/officialsanta?lang=en">
