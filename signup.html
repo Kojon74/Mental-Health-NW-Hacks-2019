@@ -224,7 +224,7 @@ function createDiv(height, width) {
   <!-- The <br> tag adds a break line symbol, basically starting a new paragraph -->
   <h4>Sign up here to be matched with someone </h4>
     
-    <form>
+    <form action = "matchingresult.html" method = "GET">
       First name:<br>
       <input type="text" name="firstname"><br>
       Last name:<br>
@@ -245,7 +245,8 @@ function createDiv(height, width) {
       <input type="radio" name="gender" value="female"> Female<br>
       <input type="radio" name="gender" value="other"> Other <br>
       <br>
-      <a href="matchingresult.html">Submit</a>
+      <input type="submit" value="Submit" />
+
           
     </form>
     
