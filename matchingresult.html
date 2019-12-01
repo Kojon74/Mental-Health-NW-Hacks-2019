@@ -175,7 +175,28 @@ function createDiv(height, width) {
   return (div);
 }
 // ]]>
-</script>
+  
+function GetURLParameter(sParam)
+{
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++) 
+    {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam) 
+        {
+            return sParameterName[1];
+        }
+    }
+}​
+
+  var bn = GetURLParameter("firstname");
+  document.getElementById('output1').innerHTML = "123";
+  var fn = 'name';
+  document.getElementById('output').innerHTML = fn;
+
+  </script>
+
 </head>
 <body>
 
@@ -183,7 +204,7 @@ function createDiv(height, width) {
 <div class="page-container">
 
 
-    <div style="background-color: rgb(216,216,216,0.5);">
+    <div style="background-color: #CC0000;">
           <div class="container">
               <nav class="navbar row">
                   <div class="navbar-brand">Counsel Connect</div>
@@ -213,6 +234,7 @@ function createDiv(height, width) {
     </div>
   </div>
 
+
   
 <div class = "container1">
   <div class="container2">
@@ -223,10 +245,9 @@ function createDiv(height, width) {
     <th><h4 style="text-align:center;"><b>Your Matched Results: </b></h4></th>
   </tr>
 </table>
-  <table style="width:100%">
+  <table style="width:100%" >
   <tr>
-    
-    <th><p style = "text-align: left;">First name:</p></th><th> <p style = "text-align: left;">YOUR FIRST NAME</p> </th>
+    <th><p style = "text-align: left;">First name:</p></th><th> <p id='output'></p></th>
     
     <th><p style = "text-align: left;">First name:</p></th><th> <p style = "text-align: left;">JOHN</p> </th> 
     
@@ -234,7 +255,7 @@ function createDiv(height, width) {
   <tr>
       <th><p style = "text-align: left;">Last name:</p></th><th> <p style = "text-align: left;">YOUR LAST NAME</p> </th> 
       
-      <th><p style = "text-align: left;">Last name:</p></th><th> <p style = "text-align: left;">DOE</p> </th> <br>
+      <th><p style = "text-align: left;">Last name:</p></th><th> <p style = "text-align: left;">DOE</p> </th>
      
   </tr>
   <tr>
@@ -243,18 +264,17 @@ function createDiv(height, width) {
       <th><p style = "text-align: left;">Gender:</p></th><th> <p style = "text-align: left;">MALE</p> </th> 
   </tr>
 
-  <tr>
-      <th>Age: </th> <th> AGE </th><br>
-    </tr>
 
     <tr>
-        <th>Faculty: </th> <th> FACULTY </th><br>
+        <th><p style = "text-align: left;">Faculty:</p></th><th> <p style = "text-align: left;">ENGINEERING</p> </th> 
+      
+        <th><p style = "text-align: left;">Faculty:</p></th><th> <p style = "text-align: left;">ENGINEERING</p> </th> 
       </tr>
 
 </table>
 </div>
 </div>
-
+    
 <div class = "rightcol">
   <br>
     <th><h4 style="text-align:center;"><a href="resources.html"><b>More Resources! </b></a></h4></th>
