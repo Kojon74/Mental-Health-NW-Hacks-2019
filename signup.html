@@ -160,7 +160,15 @@ function createDiv(height, width) {
   return (div);
 }
 // ]]>
+
 </script>
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<!--Let browser know website is optimized for mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
 
@@ -168,8 +176,8 @@ function createDiv(height, width) {
 <div class="page-container">
 
 <div style="background-color: rgba(216, 216, 216, 0.9);">
-      <div class="container">
-          <nav class="navbar row">
+      <div class="container" >
+          <nav class="navbar row" style="background-color: rgba(216, 216, 216, 0.9);" >
               <div class="navbar-brand">Counsel Connect</div>
               <!-- ul is a list/table, in this case it is styled to be horizontal to display all the links -->
               <ul class="site-navigation nav navbar-nav">
@@ -202,8 +210,8 @@ function createDiv(height, width) {
 <div class="container">
   <!-- The <br> tag adds a break line symbol, basically starting a new paragraph -->
   <h4 style="color: black;">Sign up here to be matched with someone </h4>
-    
-    <form action = "matchingresult.html" method = "GET">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- <form action = "matchingresult.html" method = "GET">
       First name:<br>
       <input type="text" name="firstname"><br>
       Last name:<br>
@@ -230,10 +238,51 @@ function createDiv(height, width) {
       <input type="radio" name="gender" value="female"> Female<br>
       <input type="radio" name="gender" value="other"> Other <br>
       <br>
-      <input type="submit" value="Submit" />
-
-          
-    </form>
+      <input type="submit" value="Submit" /> -->
+      <div class="row">
+            <form class="col s12" action = "matchingresult.html" method = "GET">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input placeholder="Phill" id="first_name" type="text" class="validate">
+                  <label for="first_name">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                    <input placeholder="Philanigan" id="first_name" type="text" class="validate">
+                  <label for="last_name">Last Name</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input placeholder="12345678" id="Student Number" type="text" class="validate">
+                  <label for="Student Number">Student Number</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                    <input placeholder="Applied Science" id="Faculty" type="text" class="validate">
+                    <label for="Faculty">Faculty</label>
+                </div>
+              </div>
+              <div class="row">
+                    <div class="input-field col s12">
+                      <input id="Faculty" type="password" class="validate">
+                      <label for="password">Username</label>
+                    </div>
+                </div>
+              <div class="row">
+                    <div class="input-field col s12">
+                      <input id="Faculty" type="password" class="validate">
+                      <label for="password">Password</label>
+                    </div>
+                </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="email" type="email" class="validate">
+                  <label for="email">Email</label>
+                </div>
+              </div>
+            </form>
+          </div>
     
 </div>
 <!-- end Main content of the page -->

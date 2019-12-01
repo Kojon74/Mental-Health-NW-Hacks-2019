@@ -252,3 +252,9 @@ button{
 	background:#0FC18D;
 
 }
+
+.selector.noshadow {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
