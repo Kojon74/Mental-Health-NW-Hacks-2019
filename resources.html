@@ -62,27 +62,6 @@ window.onload=function() { if (document.getElementById) {
   sparkle();
 }}
 
-function sparkle() {
-  var c;
-  if (x!=ox || y!=oy) {
-    ox=x;
-    oy=y;
-    for (c=0; c<sparkles; c++) if (!starv[c]) {
-      star[c].style.left=(starx[c]=x)+"px";
-      star[c].style.top=(stary[c]=y)+"px";
-      star[c].style.clip="rect(0px, 5px, 5px, 0px)";
-      star[c].style.visibility="visible";
-      starv[c]=50;
-      break;
-    }
-  }
-  for (c=0; c<sparkles; c++) {
-    if (starv[c]) update_star(c);
-    if (tinyv[c]) update_tiny(c);
-  }
-  setTimeout("sparkle()", 40);
-}
-
 function update_star(i) {
   if (--starv[i]==25) star[i].style.clip="rect(1px, 4px, 4px, 1px)";
   if (starv[i]) {
@@ -190,7 +169,11 @@ function createDiv(height, width) {
 <!-- Main container, prevents horizontal scrolling -->
 <div class="page-container">
 
-    <div style="background-color: #CC0000;">
+<<<<<<< HEAD
+    <div style="background-color: rgba(216, 216, 216, 0.5);">
+=======
+    <div style="background-color: rgba(216, 216, 216, 0.9);">
+>>>>>>> f396605fa624965b32c8a5efebb33a95acd8ddb9
         <div class="container">
             <nav class="navbar row">
                 <div class="navbar-brand">Counsel Connect</div>
@@ -223,27 +206,76 @@ function createDiv(height, width) {
 <!-- Main content of the page -->
 <div class="container">
   <!-- The <br> tag adds a break line symbol, basically starting a new paragraph -->
-  <h3 style="color:#000;">Below are some resources that you can access
+  <h3 style="color:#000;">UBC resources that you can access:
   </h3>
 
   <div class="text-left">
     <!-- It is possible to link to parts inside a page. Simply set the id on a div and then link to it
     with a # and then the id of the div, for example #next -->
+          <a href="http://www.studentcare.ca/rte/en/UniversityofBritishColumbiaAMSGSS_EmpowerMe_EmpowerMe" class="btn" target="_blank">Empower me</a>
+          <a href="https://students.ubc.ca/health/wellness-centre" class="btn" target="_blank">UBC Wellness Centre</a>
           <a href="https://students.ubc.ca/health/counselling-services" class="btn" target="_blank">UBC Counselling</a>
-  </div>
-  <div class="text-center">
+          <a href=" https://www.ams.ubc.ca/services/speakeasy/" class="btn" target="_blank">AMS Speakeasy</a>
+
+        </div>
+  <div class="text-left">
     <!-- It is possible to link to parts inside a page. Simply set the id on a div and then link to it
     with a # and then the id of the div, for example #next -->
-          <a href="http://www.studentcare.ca/rte/en/UniversityofBritishColumbiaAMSGSS_EmpowerMe_EmpowerMe" class="btn" target="_blank">Empower me</a>
-    </div>
+          
+  </div>
+  <h3 style="color:#000;"> Resources for connecting with others online:
+</h3>
+  <div class="text-left">
+    <!-- It is possible to link to parts inside a page. Simply set the id on a div and then link to it
+    with a # and then the id of the div, for example #next -->
+          <a href="https://crisiscentrechat.ca/" class="btn" target="_blank">Crisis Centre Chat</a>
+          <a href="https://www.7cups.com/" class="btn" target="_blank">7 Cups of Tea</a>
+          <a href="https://www.heretohelp.bc.ca/" class="btn" target="_blank">Here to Help</a>
+  
+        </div>
+
+ 
+  <h3 style="color:#000;">Contact lines
+</h3>
+<p>Vancouver crisis line (24 hours): 1-800-SUICIDE (1-800-784-2433) <br>
+Vancouver General Hospital: 604-875-4995<br>
+Kids help phone: 1-800-668-6868<br>
+SAFER Counselling Service: 604-675-3985<br>
+UBC Wellness Centre: 604-822-8450<br>
+UBC Counselling: 604-822-3811 <br>
+Empower me: 1-844-741-6389<br>
+Royal Canadian Mounted Police (RCMP), UBC Detachment: 604-224-1322<br>
+</p>
+  
 <br> </br>
+
 </div>
 <!-- end Main content of the page -->
 
 </body>
 
 <footer>
-  <div class="footer">
+<<<<<<< HEAD
+    <div class="footer">
+        <div class="container">
+            <div class="col-sm-12 text-center" style="margin-top:8px;">
+                  <a href="https://twitter.com/officialsanta?lang=en">
+            <img src="twitter.png" style="width:25px;height:25px;border:0;">
+          </a>
+          <a href="https://www.facebook.com/OfficiallySantaClaus/">
+            <img src="facebook_large.png" style="width:25px;height:25px;border:0;">
+          </a>
+          <a href="https://www.instagram.com/santa/?hl=en">
+            <img src="instagram.png" style="width:25px;height:25px;border:0;">
+          </a>
+          <p style="color:#fff;">Find us!</p>
+          <p style="color:#fff;">For any questions or issues to report, contact us at: councelconnect@gmail.com</p>
+            </div>
+            
+        </div>
+    </div>
+=======
+  <div class="footer" style="background-color: rgba(216, 216, 216, 0.9);">
   	<div class="container">
   		<div class="col-sm-12 text-center" style="margin-top:8px;">
             <a href="https://twitter.com/officialsanta?lang=en">
@@ -259,6 +291,7 @@ function createDiv(height, width) {
   		</div>
   	</div>
   </div>
+>>>>>>> f396605fa624965b32c8a5efebb33a95acd8ddb9
 </footer>
 
 
