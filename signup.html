@@ -36,6 +36,11 @@ var tinyx=new Array();
 var tinyy=new Array();
 var tinyv=new Array();
 
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('select');
+    var instances = M.FormSelect.init(elems, options);
+  });
+
 window.onload=function() { if (document.getElementById) {
   var i, rats, rlef, rdow;
   for (var i=0; i<sparkles; i++) {
@@ -159,6 +164,8 @@ function createDiv(height, width) {
   div.style.backgroundColor=colour;
   return (div);
 }
+
+
 // ]]>
 
 </script>
@@ -239,50 +246,57 @@ function createDiv(height, width) {
       <input type="radio" name="gender" value="Other"> Other <br>
       <br>
       <input type="submit" value="Submit" /> -->
-      <div class="row">
+
             <form class="col s12" action = "matchingresult.html" method = "GET">
               <div class="row">
                 <div class="input-field col s6">
-                  <input placeholder="Phill" id="first_name" type="text" class="validate">
+                  <input placeholder="Phill" id="first_name" type="text" class="validate" name="firstname">
                   <label for="first_name">First Name</label>
                 </div>
                 <div class="input-field col s6">
-                    <input placeholder="Philanigan" id="first_name" type="text" class="validate">
+                    <input placeholder="Philanigan" id="first_name" type="text" class="validate" name="lastname">
                   <label for="last_name">Last Name</label>
                 </div>
               </div>
               <div class="row">
+                    <div class="input-field col s12">
+                      <input placeholder="Female" id="Student Number" type="text" class="validate" name="gender">
+                      <label for="Student Number">Gender</label>
+                    </div>
+                  </div>
+              <div class="row">
                 <div class="input-field col s12">
-                  <input placeholder="12345678" id="Student Number" type="text" class="validate">
+                  <input placeholder="12345678" id="Student Number" type="text" class="validate" name="studentnumber">
                   <label for="Student Number">Student Number</label>
                 </div>
               </div>
               <div class="row">
                 <div class="input-field col s12">
-                    <input placeholder="Applied Science" id="Faculty" type="text" class="validate">
+                    <input placeholder="Applied Science" id="Faculty" type="text" class="validate" name="faculty">
                     <label for="Faculty">Faculty</label>
                 </div>
               </div>
               <div class="row">
                     <div class="input-field col s12">
-                      <input id="Faculty" type="password" class="validate">
-                      <label for="password">Username</label>
+                            <input placeholder="Phill_da_god" id="Faculty" type="text" class="validate" name="username">
+                            <label for="Faculty">Username</label>
                     </div>
                 </div>
               <div class="row">
                     <div class="input-field col s12">
-                      <input id="Faculty" type="password" class="validate">
-                      <label for="password">Password</label>
+                            <input placeholder="12345678" id="Faculty" type="text" class="validate" name="password">
+                            <label for="Faculty">Password</label>
                     </div>
                 </div>
               <div class="row">
                 <div class="input-field col s12">
-                  <input id="email" type="email" class="validate">
-                  <label for="email">Email</label>
+                        <input placeholder="phillphilanigan@yahoo.ca" id="Faculty" type="text" class="validate" name="contactinfo">
+                        <label for="Faculty">Email</label>
                 </div>
               </div>
+              
+              <input type="submit" value="Submit" />
             </form>
-          </div>
     
 </div>
 <!-- end Main content of the page -->
