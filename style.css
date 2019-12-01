@@ -91,14 +91,14 @@ h4 {
   border-radius: 40px;
 
   /* Background colour for buttons */
-  background:rgba(216, 216, 216, 0.5);
+  background:rgba(216, 216, 216, 0.9);
 	color:#FFF!important;
 	font-size: 20px;
 }
 
 /* Background colour when button is hovered */
 .btn:hover {
-  background: rgba(216, 216, 216, 0.5);
+  background: rgba(216, 216, 216, 0.9);
 }
 
 /* Prevent ugly blue glow on chrome and safari */
@@ -206,7 +206,7 @@ button{
 	position:relative;  		 /* This fixes the IE7 overflow hidden bug */
 	clear:both;
 	float:left;
-	width:100%;			    		 /* width of whole page */
+	width:100%;		/* width of whole page */
 	overflow:hidden;		  	 /* This chops off any overhanging divs */
 	background:#FFF;	/* col2 background colour */	
 	padding:0 0 1em 0;
