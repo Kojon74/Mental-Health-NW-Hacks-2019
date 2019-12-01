@@ -61,27 +61,6 @@ window.onload=function() { if (document.getElementById) {
   sparkle();
 }}
 
-function sparkle() {
-  var c;
-  if (x!=ox || y!=oy) {
-    ox=x;
-    oy=y;
-    for (c=0; c<sparkles; c++) if (!starv[c]) {
-      star[c].style.left=(starx[c]=x)+"px";
-      star[c].style.top=(stary[c]=y)+"px";
-      star[c].style.clip="rect(0px, 5px, 5px, 0px)";
-      star[c].style.visibility="visible";
-      starv[c]=50;
-      break;
-    }
-  }
-  for (c=0; c<sparkles; c++) {
-    if (starv[c]) update_star(c);
-    if (tinyv[c]) update_tiny(c);
-  }
-  setTimeout("sparkle()", 40);
-}
-
 function update_star(i) {
   if (--starv[i]==25) star[i].style.clip="rect(1px, 4px, 4px, 1px)";
   if (starv[i]) {
@@ -188,7 +167,7 @@ function createDiv(height, width) {
 <!-- Main container, prevents horizontal scrolling -->
 <div class="page-container">
 
-<div style="background-color: #CC0000;">
+<div style="background-color: rgba(216, 216, 216, 0.5)">
       <div class="container">
           <nav class="navbar row">
               <div class="navbar-brand">Counsel Connect</div>
@@ -222,18 +201,23 @@ function createDiv(height, width) {
 <!-- Main content of the page -->
 <div class="container">
   <!-- The <br> tag adds a break line symbol, basically starting a new paragraph -->
-  <h4>Sign up here to be matched with someone </h4>
+  <h4 style="color: black;">Sign up here to be matched with someone </h4>
     
     <form action = "matchingresult.html" method = "GET">
       First name:<br>
       <input type="text" name="firstname"><br>
       Last name:<br>
       <input type="text" name="lastname"><br>
+      Student number:<br>
+      <input type="text" name="student number"><br>
       Faculty:<br>
-      <input type="text" name="firstname"><br>
+      <input type="text" name="faculty"><br>
+      Contact info:<br>
+      <input type="text" name="contact info"><br>
+
       <input type="radio" name="faculty choice" value="yes faculty" checked> I would like to be matched with someone in my faculty<br>
       <input type="radio" name="faculty choice" value="no faculty"> I would like to be matched with someone outside of my faculty<br>
-      <input type="radio" name="faculty choice" value="other"> Other <br>
+      <input type="radio" name="faculty choice" value="other"> It doesn't matter which faculty my match is in <br>
         <br>
         <input type="radio" name="role" value="undergraduate student" checked> Undergraduate student<br>
         <input type="radio" name="role" value="graduate student"> Graduate student<br>
@@ -241,6 +225,7 @@ function createDiv(height, width) {
         <input type="radio" name="role" value="alumni"> Alumni <br>
         <input type="radio" name="role" value="other"> Other <br>
         <br>
+    <input type="checkbox" name="choice" value="other"> Check this box if you prefer to be matched with a student <br> <br>
       <input type="radio" name="gender" value="male" checked> Male<br>
       <input type="radio" name="gender" value="female"> Female<br>
       <input type="radio" name="gender" value="other"> Other <br>
