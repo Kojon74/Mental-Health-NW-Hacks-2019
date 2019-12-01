@@ -91,14 +91,14 @@ h4 {
   border-radius: 40px;
 
   /* Background colour for buttons */
-  background:#0B5902;
+  background:rgba(216, 216, 216, 0.5);
 	color:#FFF!important;
 	font-size: 20px;
 }
 
 /* Background colour when button is hovered */
 .btn:hover {
-  background:#006600;
+  background: rgba(216, 216, 216, 0.5);
 }
 
 /* Prevent ugly blue glow on chrome and safari */
