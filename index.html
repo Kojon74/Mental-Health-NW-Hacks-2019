@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <link rel="shortcut icon" type="image/png" href="customlogo.png"/> <!--CHANGE ICON-->
+    <link rel="shortcut icon" type="image/png" href="Wallpaper-2.png"/> <!--CHANGE ICON-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
     <link rel="stylesheet" id="ppstyle" type="text/css" href="style.css">
@@ -58,26 +58,26 @@ window.onload=function() { if (document.getElementById) {
   sparkle();
 }}
 
-function sparkle() {
-  var c;
-  if (x!=ox || y!=oy) {
-    ox=x;
-    oy=y;
-    for (c=0; c<sparkles; c++) if (!starv[c]) {
-      star[c].style.left=(starx[c]=x)+"px";
-      star[c].style.top=(stary[c]=y)+"px";
-      star[c].style.clip="rect(0px, 5px, 5px, 0px)";
-      star[c].style.visibility="visible";
-      starv[c]=50;
-      break;
-    }
-  }
-  for (c=0; c<sparkles; c++) {
-    if (starv[c]) update_star(c);
-    if (tinyv[c]) update_tiny(c);
-  }
-  setTimeout("sparkle()", 40);
-}
+// function sparkle() {
+//   var c;
+//   if (x!=ox || y!=oy) {
+//     ox=x;
+//     oy=y;
+//     for (c=0; c<sparkles; c++) if (!starv[c]) {
+//       star[c].style.left=(starx[c]=x)+"px";
+//       star[c].style.top=(stary[c]=y)+"px";
+//       star[c].style.clip="rect(0px, 5px, 5px, 0px)";
+//       star[c].style.visibility="visible";
+//       starv[c]=50;
+//       break;
+//     }
+//   }
+//   for (c=0; c<sparkles; c++) {
+//     if (starv[c]) update_star(c);
+//     if (tinyv[c]) update_tiny(c);
+//   }
+//   setTimeout("sparkle()", 40);
+// }
 
 function update_star(i) {
   if (--starv[i]==25) star[i].style.clip="rect(1px, 4px, 4px, 1px)";
@@ -175,6 +175,7 @@ function createDiv(height, width) {
   div.style.width=width+"px";
   div.style.overflow="hidden";
   div.style.backgroundColor=colour;
+  div.style.backgroundImage="Wallpaper-2.png";
   return (div);
 }
 // ]]>
@@ -185,7 +186,7 @@ function createDiv(height, width) {
 <!-- Main container, prevents horizontal scrolling -->
 <div class="page-container">
 
-<div style="background-color: #CC0000;">
+<div style="background-color: rgba(216, 216, 216, 0.5);">
       <div class="container">
           <nav class="navbar row">
               <div class="navbar-brand">Counsel Connect</div>
@@ -272,7 +273,5 @@ function createDiv(height, width) {
   	</div>
   </div>
 </footer>
-
-
 
 </html>
